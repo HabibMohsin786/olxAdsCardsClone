@@ -40,7 +40,7 @@ window.getData = function () {
       console.log(obj);
       
       perent.innerHTML +=
-        `<div class="card mt-5 mx-2 mb-2 crd" style="width: 20rem;">
+        `<div onclick="cardClick('${obj.id}')" class="card mt-5 mx-2 mb-2 crd" style="width: 20rem;">
             <img src="${obj.productImage2}" class="card-img-top" alt="..."
                 style="height: 200px;">
             <div class="card-body">
@@ -62,3 +62,8 @@ window.getData = function () {
 
 }
 getData();
+
+window.cardClick = function (id) {
+  localStorage.setItem("carId", id);
+  window.location.assign("/pages/AdDetail/AdDetail.html");
+};

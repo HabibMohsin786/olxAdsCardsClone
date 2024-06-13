@@ -10,15 +10,142 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="allAds.css">
+    <link rel="stylesheet" href="allAds.css">
 </head>
 
 <body>
-    <h1 class="bg-secondary-subtle p-5 ">OLX Clone</h1>
+    <!-- Header start -->
+    <div class="sticky-top">
 
-    <h3 class="fst-italic text-decoration-underline px-5">All Products</h3>
+        <!-- navbar top box start -->
+        <div class="top_box">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ps-5 mt-0 pt-0">
+                <div class="container-fluid" style="font-family: 'Roboto', sans-serif;">
+                    <a class="navbar-brand fs-4 text-primary" style="font-weight: bolder;" href="#">o|x</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link ms-3 t_b_1" style="font-size: 14px;" aria-current="page"
+                                    href="#"><span class=" rounded-circle p-2 text-secondary fs-6 me-1"
+                                        style="background: linear-gradient(#dee2e6,#f7f8f8 ) ;"><i
+                                            class="fa-solid fa-car-rear t_b_1"></i></span> MOTORS</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link ms-3 t_b_1" style="font-size: 14px;" aria-current="page"
+                                    href="#"><span class=" rounded-circle p-2 text-secondary fs-6 me-1 p-2"
+                                        style="background: linear-gradient(#dee2e6,#f7f8f8 );"><i
+                                            class="fa-regular fa-building t_b_1"></i></span> PROPERTY</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar top box end -->
+        <!-- navbar mid box stsrt -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 mt-3">
+            <div class="container-md mt-0 pt-0">
+                <div class="mid_box_main mt-0 d-flex justify-content-center"
+                    style="width: 100%; height: 80px; background-color: #f7f8f8;">
+                    <div class=" pt-4 me-4">
+                        <img src="../../Image/asset 29.svg" height="30px" alt="">
+                    </div>
+                    <div cclass="nav-item dropdown ">
+                        <div class="dropdown d-inline mt-2 ">
+                            <button
+                                class="btn btn-white dropdown-toggle bg-white  border border-2 border-dark rounded-2 fs-6 my-3 lh-lg "
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2"><i class="fa-solid fa-magnifying-glass"></i></span><span
+                                    class="me-5 lh-1" style="padding-right: 120px;">Pakistan</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item d-flex border border-2 rounded-2 border-dark my-3 ms-2">
+                        <input type="text" class="border border-0" placeholder="Find Cars, Mobile Phones more..."
+                            style="padding-right: 420px;">
+                        <div class="bg-dark text-center text-white ">
+                            <div class="p-1 px-3 fs-4">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item d-flex">
+                        <div class="end ms-4 mt-4 fs-5 fw-bold">
+                            <a href="" class="text-dark ">Login</a>
+                        </div>
+                        <div class="end2 mt-3 ms-3">
+                            <div class=" mx-4 mt-2 fw-bolder"><a class="text-dark"></a><img src="Image/asset 2.svg"
+                                    alt="">SELL</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar mid box end -->
+    </div>
+    <!-- navbar last box start -->
+    <nav class="navbar navbar-expand-lg bg-body-white bg-white p-0 m-0 ps-2 shadow-sm p-0 mb-0 bg-body-white rounded">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-dark">
+                    <li class="nav-item dropdown fw-semibold">
+                        <a class="anc1 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" aria-current="page" href="#">Mobile Phones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" href="#">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" href="#">Motorcycles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" href="#">Houses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" href="#">Video-Audios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" href="#">Tablets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="anc nav-link" href="#">Land & Plots</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar last box end -->
+    <!-- Header end -->
+
+    <!-- Start Body -->
     <div class="d-flex flex-wrap" id="perent">
-    
+
         <!-- <div class="card mt-5 mx-2 mb-2 crd" style="width: 20rem;">
             <img src="https://images.olx.com.pk/thumbnails/461143998-800x600.webp" class="card-img-top" alt="..."
                 style="height: 200px;">
@@ -36,6 +163,138 @@
 
 
     </div>
+    <!-- End Boday -->
+    
+    <!-- Footer Start -->
+
+    <!-- Footer top Start -->
+    <div class="p-0 m-0 mt-3 bg-body-tertiary">
+        <div class="row ">
+            <div class="col-md-4">
+                <img src="../../Image/asset 18.jpeg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="px-4 mt-5 border-end border-dark-subtle border-2">
+                    <h2 class="fw-bold ">TRY THE OLX APP</h2>
+                    <p class="fs-5 mt-4">
+                        Buy, sell and find just about anything using the app on your mobile.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container mt-5">
+                    <h6>GET YOUR APP TODAY</h6>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href=""><img src="../../Image/asset 19.svg" alt=""></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href=""><img src="../../Image/asset 20.svg" alt=""></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href=""><img src="../../Image/asset 21.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer top end -->
+
+    <!-- Footer Mid Start -->
+    <div class="bg-body-secondary p-0 m-0 border-top border-1 border-secondary">
+
+        <div class="row px-3 ms-3 pb-5">
+            <div class="col-md-2">
+                <p class="phb p-0 m-0 my-3 ">POPULAR CATEGORIES</p>
+                <ul class="list p-0">
+                    <li>
+                        <a href="">car</a>
+                    </li>
+                    <li>
+                        <a href="">Flats for rent</a>
+                    </li>
+                    <li>
+                        <a href="">Mobile Phones</a>
+                    </li>
+                    <li>
+                        <a href="">Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <p class="phb p-0 m-0 my-3 ">TRENDING SEARCHES</p>
+                <ul class="list p-0">
+                    <li>
+                        <a href="">Bikes</a>
+                    </li>
+                    <li>
+                        <a href="">Watches</a>
+                    </li>
+                    <li>
+                        <a href="">Books</a>
+                    </li>
+                    <li>
+                        <a href="">Dogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <p class="phb p-0 m-0 my-3 ">ABOUT US</p>
+                <ul class="list p-0">
+                    <li>
+                        <a href="">About Dubizzle Group</a>
+                    </li>
+                    <li>
+                        <a href="">OLX Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">OLX for Businesses</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <p class="phb p-0 m-0 my-3 ">OLX</p>
+                <ul class="list p-0">
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                    <li>
+                        <a href="">Sitemap</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="phb p-0 m-0 my-3 ">FOLLOW US</p>
+                <div class="row">
+                    <div class="col-md-1"><a href=""><img width="25px" src="../../Image/asset 22.svg" alt=""></a></div>
+
+                    <div class="col-md-1"><a href=""><img width="25px" src="../../Image/asset 23.svg" alt=""></a></div>
+                    <div class="col-md-1"><a href=""><img width="25px" src="../../Image/asset 24.svg" alt=""></a></div>
+                    <div class="col-md-1"><a href=""><img width="25px" src="../../Image/asset 25.svg" alt=""></a></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3"><a href=""><img width="100px" src="../../Image/asset 19.svg" alt=""></a></div>
+                    <div class="col-md-3"><a href=""><img width="100px" src="../../Image/asset 20.svg" alt=""></a></div>
+                    <div class="col-md-3"><a href=""><img width="100px" src="../../Image/asset 21.svg" alt=""></a></div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Mid end -->
+
+    <!-- Footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
