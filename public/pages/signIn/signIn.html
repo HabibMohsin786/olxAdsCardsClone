@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+        <h2 class="text-2xl font-bold mb-8 text-gray-700 text-center">Sign In</h2>
+        
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" id="email" name="email" required
+                    class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" required
+                    class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <input id="remember_me" name="remember_me" type="checkbox"
+                        class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="remember_me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+                </div>
+                <div class="text-sm">
+                    <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Forgot your password?</a>
+                </div>
+            </div>
+            <div>
+                <button onclick="signIn()" type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Sign
+                    In</button>
+            </div>
+            <div class="text-sm text-center text-gray-500">
+                Don't have an account? <a href="../signUp/signUp.html" class="font-medium text-blue-600 hover:text-blue-500">Sign Up</a>
+            </div>
+        
+    </div>
+
+    <script type="module" src="signIn.js"></script>
+</body>
+
+</html>
